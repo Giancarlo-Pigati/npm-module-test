@@ -2,7 +2,7 @@
   "name": "npm-module-test-gp",
   "version": "0.0.2",
   "description": "Testing out NPM Module Creation",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "npm run lint && babel ./src -d ./lib",
     "lint": "eslint ./src",
