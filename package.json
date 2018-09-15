@@ -1,6 +1,6 @@
 {
   "name": "npm-module-test-gp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Testing out NPM Module Creation",
   "main": "index.js",
   "scripts": {
