@@ -32,6 +32,11 @@ const testSamples = [
     input: '5431260987',
     expectedResult: '(543) 126-0987',
     description: 'should return (543) 126-0987'
+  },
+  {
+    input: '54312609876',
+    expectedResult: '(543) 126-09876',
+    description: 'should return (543) 126-09876'
   }
 ];
 

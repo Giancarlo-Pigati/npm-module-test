@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - node
+before_deploy:
+  - npm run build
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: gschultz@spredfast.com
+  api_key:
+    secure: gItLw2fiuFPXPVU4flcT6TBOqg2Lu+crDCzl3Hm0jfVeSiNO2ax+sinhI+s1TWJZRDVfGTa+/fLxAxPYmjJOrhn/8QJoZEb0oaVr0s02+mCyTn/ALL7QFWue23kBQ11Vt3bizBj6q/oGUOmdEjoLYZ0e3XgLutoeblJu0yexs7BiEP2mr9TPHtx77LC0xI0eUJY9gw1fuXxT+v4xvvUtqKcRUshg1e8ywPVfmVqN6MjHfP5nNkaTFTI1x0pvm0Ch5wuDh9Vn6oNkZzB0a6rjebGbPbV5HDxMf1NhG4j3HCcGovRt84OpaxNGEgLi3OrMl/3XUWl0A+mEDBtWTgESBHchQvrqNZ8i0r7B/HTUjzpfIlF/t8PWKmjmxrtXfVM85KKevFLOQT8hKvP15EBLaYALQiP7TR4IqqrNkunAznn06wHDopX5VDU85E2ah9cJzxUigfT0Z8in66SQmQCKjM+2KQJs+4/c/4Vf7BwHmayQWVCb8qHBfABCq9pb6xuhr7juI2BBlQ5tTjZa0WDzJ+aYhjKn9Rni6UJ8FDyGYL60fhow5jOiUiq9dNbZP+GKNrQth0/s6ZUxmTUHpCuW9vOVfN0F3jlusCrdcqh932nWY599SRJ/K5iOlMxLi87ugHa1+1/QdfvTV2NpZ5bZlcgafWBtvohqAuINgGXrIl8=
+  on:
+    tags: true
+    repo: Giancarlo-Pigati/npm-module-test
